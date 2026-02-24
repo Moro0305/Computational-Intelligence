@@ -1,0 +1,17 @@
+For executing this activity it's needed to install requirements.txt file, you can do it by running the following command in your terminal:
+
+pip install -r requirements.txt
+
+After installing the requirements, open the Export_ML.ipynb file in Jupyter Notebook and run all the cells to execute the activity.
+You can find the exported model in the same directory as the notebook, with the name "model.pkl".
+This file contains the trained machine learning model that can be used for making predictions on new data.
+
+Then you need to go to the Inference.py file and execute it to see how the exported model can be used for making predictions.
+Make sure to have the "model.pkl" file in the same directory as the Inference.py file for it to work properly.
+The Inference.py file will load the model and use it to make predictions on a sample input data, which you can modify as needed to test with different inputs.
+
+(If you pull the repository there's no need to change the model location, as it's already configured to be searched in common directories.)
+
+The inference gets help from a UI created with tkinter, which allows you to input the features of the data and get the prediction from the model.
+Make sure to have the necessary libraries installed for the UI to work properly, such as tkinter and any other dependencies specified in the requirements.txt file.
+You can run the Inference.py file, and a window will pop up where you can enter the features of the data.
